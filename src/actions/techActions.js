@@ -9,7 +9,7 @@ import {
 // Get techs from server
 export const getTechs = () => async dispatch => {
   try {
-    setLoading();
+    dispatch(setLoading());
 
     const res = await fetch('/techs');
     const data = await res.json();
@@ -29,7 +29,7 @@ export const getTechs = () => async dispatch => {
 // Add technician to server
 export const addTech = tech => async dispatch => {
   try {
-    setLoading();
+    dispatch(setLoading());
 
     const res = await fetch('/techs', {
       method: 'POST',
@@ -54,7 +54,7 @@ export const addTech = tech => async dispatch => {
 
 export const deleteTech = id => async dispatch => {
   try {
-    setLoading();
+    dispatch(setLoading());
 
     await fetch(`/techs/${id}`, {
       method: 'DELETE'
