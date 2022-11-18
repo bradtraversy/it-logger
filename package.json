@@ -9,7 +9,7 @@
     "react-dom": "^16.8.6",
     "react-moment": "^0.9.2",
     "react-redux": "^7.0.3",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0"
